@@ -1,0 +1,64 @@
+{% extends 'zloggr/base.html' %}
+{% load static %}
+
+{% block title %}About Us | Zloggr blogs family{% endblock %}
+
+{% block metadescription %}Here at Zloggr, blogs are made just for you!{% endblock %}
+
+{% block content %}
+
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('static/pictures/zloggraboutus.webp')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>About Me</h1>
+            <span class="subheading">This is what I am about.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  {% if email %}
+
+  <h2>
+    Thanks
+  </h2>
+
+  {% else %}
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <p><span id="sub-about">Hi! from zloggr. &#128075; </span></p>
+
+        <p><span id="sub-about">Blogs made just for you.</span> Zloggr blogs are blogs written for the sole satisfaction of our viewers, you! Blogs here are not just written to rank up on search engines, but are made just for you!</p>
+        
+        <p>The only reason blogs are written here are to answer the questions which you have asked.</p>
+
+        <p>So please, ask us anything!!</p>
+
+        <p><span id="sub-about">Join Us Today. </span>Join us today and receive weekly information and updates from us. Also get informed about new blogs and offers!</p>
+      </div>
+
+      <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button class="btn btn-dark">Join Us</button>
+      </form>
+    </div>
+  </div>
+
+
+
+
+
+  <hr>
+{% endif %}
+
+{% endblock %}

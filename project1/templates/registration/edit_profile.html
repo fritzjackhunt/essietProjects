@@ -1,0 +1,26 @@
+{% extends 'essietproject/base.html' %}
+{% load static %}
+
+{% block title %}Edit Your Profile Here{% endblock %}
+
+{% block content %}
+<h1>Edit your profie here.</h1>
+
+<br>
+
+{{ user.userprofile.bio }}
+
+<br><br>
+
+<div class="form-group">
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p}}
+        <button class="btn btn-secondary">Update profile</button>
+        
+    </form>
+</div>
+
+
+
+{% endblock %}

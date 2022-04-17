@@ -1,0 +1,54 @@
+{% extends 'zloggr/base.html' %}
+{% load static %}
+
+{% block title %}SONY product reviews | Zloggr blogs{% endblock %}
+
+{% block metadescription %}Latest sony products and accessories. Sony headphones and cameras reviews{% endblock %}
+
+{% block content %}
+
+    <!--Canonical links-->
+    <link rel="canonical" href="https://zloggr.com/sony">
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('static/pictures/sony.webp')">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+            <h1>Sony Products and Accessories</h1>
+            <h2 class="subheading">Blogs made for you</h2>
+            <span class="meta">Posted by
+                <a href="https://aniekanessiet.com/">Aniekan Essiet</a>
+            </span>
+            </div>
+        </div>
+        </div>
+    </div>
+    </header>
+    
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-preview">
+            <a href="{% url 'blog9' %}">
+              <h2 class="post-title">
+                Sony WH-1000XM4 Wireless Headphones
+              </h2>
+              <h3 class="post-subtitle">
+                "When the music hits you, you feel no pain"
+              </h3>
+            </a>
+            <p class="post-meta">Posted by
+              <a href="https://aniekanessiet.com/">Aniekan Essiet</a>
+              on August 26, 2021</p>
+          </div>
+          <hr>
+        </div>
+      </div>
+    </div>
+<hr>
+
+{% endblock %}

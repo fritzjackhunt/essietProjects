@@ -1,0 +1,19 @@
+{% extends 'essietproject/base.html' %}
+{% load static %}
+
+{% block content %}
+
+  <h1>Jobs</h1>
+
+  <ul>
+    {% for job in object_list %}
+      <li><a href="{% url 'job-detail' job.pk %}">{{ job.title }}</a> - {{ job.author.first_name }} {{ job.author.last_name }} | <span> <a href="{% url 'job-edit' job.pk %}">Edit</a></span> | <span> <a href="{% url 'job-delete' job.pk %}">Delete</a></span>
+      <br>
+        {{ job.description }}</li>
+    {% endfor %}
+  </ul>
+
+  
+
+
+{% endblock %}

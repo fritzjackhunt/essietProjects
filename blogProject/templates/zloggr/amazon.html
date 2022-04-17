@@ -1,0 +1,74 @@
+{% extends 'zloggr/base.html' %}
+{% load static %}
+
+{% block title %}Amazon Products reviews 2021 | Zloggr blogs{% endblock %}
+
+{% block metadescription %}Latest amazon products and accessories. Amazon speakers and gadgets 2021 reviews{% endblock %}
+
+{% block content %}
+
+    <!--Canonical links-->
+    <link rel="canonical" href="https://zloggr.com/amazon">
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('static/pictures/echodot.webp')">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+            <h1>Amazon Products and Accessories</h1>
+            <h2 class="subheading">Blogs made for you</h2>
+            <span class="meta">Posted by
+                <a href="https://aniekanessiet.com/">Aniekan Essiet</a>
+            </span>
+            </div>
+        </div>
+        </div>
+    </div>
+    </header>
+
+    <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-preview">
+              <a href="{% url 'blog4' %}">
+                <h2 class="post-title">
+                  Amazon Echo Dot (3rd Gen)
+                </h2>
+                <h3 class="post-subtitle">
+                  Your Smart Speaker
+                </h3>
+              </a>
+              <p class="post-meta">Posted by
+                <a href="https://aniekanessiet.com/">Aniekan Essiet</a>
+                on July 08, 2021</p>
+            </div>
+            <hr>
+          </div>
+        </div>
+      </div>
+    
+    
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-preview">
+              <a href="{% url 'blog3' %}">
+                <h2 class="post-title">
+                  Amazon Fire Tv stick 4k
+                </h2>
+                <h3 class="post-subtitle">
+                  The NO. 1 Home Entertainment Streaming Technology
+                </h3>
+              </a>
+              <p class="post-meta">Posted by
+                <a href="https://aniekanessiet.com/">Aniekan Essiet</a>
+                on July 01, 2021</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+<hr>
+{% endblock %}

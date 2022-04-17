@@ -1,0 +1,167 @@
+{% extends 'zloggr/base.html' %}
+{% load static %}
+
+{% block title %}Zloggr blogs - Next homepage{% endblock %}
+
+{% block metadescription %}Zloggr blogs - Next Page includes more blogs made just for you about tech accessories, products and internet protection.{% endblock %}
+
+{% block content %}
+
+  <!--Canonical links-->
+  <link rel="canonical" href="https://zloggr.com/next">
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('static/pictures/zloggrhomepage1.webp')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="site-heading">
+            <h1>Zloggr blogs</h1>
+            <span class="subheading">Blogs, made just for you</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview">
+          <a href="{% url 'blog6' %}">
+            <h2 class="post-title">
+              Huawei Honor Band 6 
+            </h2>
+            <h3 class="post-subtitle">
+              What is the Huawei Honor Band 6 smart watch and why do you ned to get it?
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="https://aniekanessiet.com/">Aniekan Essiet</a>
+            on August 16, 2021</p>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview">
+          <a href="{% url 'blog5' %}">
+            <h2 class="post-title">
+              Arctos Portable A/C 2021
+            </h2>
+            <h3 class="post-subtitle">
+              Your lightweight, compact and portable evaporative air cooler
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="https://aniekanessiet.com/">Aniekan Essiet</a>
+            on July 27, 2021</p>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview">
+          <a href="{% url 'blog4' %}">
+            <h2 class="post-title">
+              Amazon Echo Dot (3rd Gen)
+            </h2>
+            <h3 class="post-subtitle">
+              Your Smart Speaker
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="https://aniekanessiet.com/">Aniekan Essiet</a>
+            on July 08, 2021</p>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview">
+          <a href="{% url 'blog3' %}">
+            <h2 class="post-title">
+              Amazon Fire Tv stick 4k
+            </h2>
+            <h3 class="post-subtitle">
+              The NO. 1 Home Entertainment Streaming Technology
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="https://aniekanessiet.com/">Aniekan Essiet</a>
+            on July 01, 2021</p>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview">
+          <a href="{% url 'blog2' %}">
+            <h2 class="post-title">
+              Blaux Portable Air Conditioner 2021
+            </h2>
+            <h3 class="post-subtitle">
+              The best portable AC of 2021!
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="https://aniekanessiet.com/">Aniekan Essiet</a>
+            on June 06, 2021</p>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview">
+          <a href="{% url 'blog1' %}">
+            <h2 class="post-title">
+              Top 5 Portable Air Conditioners 2021
+            </h2>
+            <h3 class="post-subtitle">
+              It's summer and it's really hot!
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="https://aniekanessiet.com/">Aniekan Essiet</a>
+            on May 25, 2021</p>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
+
+  <br>
+  <div class="container">
+    <div class="d-flex justify-content-start">
+      <a href="{% url 'homepage' %}" class="btn btn-dark" role="button">Previous Page</a>
+    </div>
+  </div>
+
+
+{% endblock %}

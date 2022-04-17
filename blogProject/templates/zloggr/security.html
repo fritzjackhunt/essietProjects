@@ -1,0 +1,75 @@
+{% extends 'zloggr/base.html' %}
+{% load static %}
+
+{% block title %}Internet security reviews | Zloggr blogs{% endblock %}
+
+{% block metadescription %}Latest internet security reviews. VPN and password manager reviews{% endblock %}
+
+{% block content %}
+
+    <!--Canonical links-->
+    <link rel="canonical" href="https://zloggr.com/sony">
+
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url('static/pictures/security.webp')">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+            <div class="post-heading">
+            <h1>Security</h1>
+            <h2 class="subheading">Blogs made for you</h2>
+            <span class="meta">Posted by
+                <a href="https://aniekanessiet.com/">Aniekan Essiet</a>
+            </span>
+            </div>
+        </div>
+        </div>
+    </div>
+    </header>
+    
+
+    <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview">
+          <a href="{% url 'expressvpn' %}">
+            <h2 class="post-title">
+              ExpressVpn review 2021
+            </h2>
+            <h3 class="post-subtitle">
+              Your data is yours and should be yours alone.
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="https://aniekanessiet.com/">Aniekan Essiet</a>
+            on October 30, 2021</p>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="post-preview">
+          <a href="{% url 'internetvpn' %}">
+            <h2 class="post-title">
+              NordVpn review 2021
+            </h2>
+            <h3 class="post-subtitle">
+              Your data is yours and should be yours alone.
+            </h3>
+          </a>
+          <p class="post-meta">Posted by
+            <a href="https://aniekanessiet.com/">Aniekan Essiet</a>
+            on October 02, 2021</p>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </div>
+<hr>
+
+{% endblock %}

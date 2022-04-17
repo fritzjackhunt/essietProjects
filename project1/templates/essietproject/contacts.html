@@ -1,0 +1,58 @@
+{% extends 'essietproject/base.html' %}
+{% load static %}
+
+{% block title %}Contact Page{% endblock %}
+
+{% block content %}
+
+
+    {% if contact_fname %}
+
+    <h2>
+        Thanks {{ contact_fname }}! &#129346
+        <p>
+            We've received your mail! &#128233
+        </p>
+    </h2>
+
+    {% else %}
+
+
+<section class="contact-area">
+    <div class="container">
+        <div class="row"> 
+            <div class="col-12">
+                <iframe id="maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1419.326119463307!2d7.016002880646314!3d4.863354104623808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069d205eafd8c57%3A0xa7e946da646d092b!2s8%20Eligbolo%20Street%2C%20Aligbolu%2C%20Port%20Harcourt%2C%20Nigeria!5e0!3m2!1sen!2sru!4v1609805882838!5m2!1sen!2sru" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+    </div>
+</section>
+
+<h3 id="contact">Talk to us today {{ contact_fname }}!</h3>
+
+<form action="{% url 'contacts' %}" method="POST">
+    {% csrf_token %}
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <input type="text" class="form-control mb-30" placeholder="First name" name="fname">
+        </div>
+        <div class="form-group col-md-6">
+            <input type="text" class="form-control mb-30" placeholder="Last name" name="lname">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class="form-group col-12">
+            <input type="email" class="form-control mb-30" id="exampleInputEmail1" placeholder="email" aria-describedby="emailHelp" name="email">
+        </div>
+    </div>
+    <div class="form-row">
+        <div class=" form-group col-12">
+            <textarea class="form-control mb-30" id="exampleFormControlTextarea1" placeholder="Drop us a message and we'll get bact to you as soon as possible!" rows="6" name="message"></textarea>
+        </div>
+      </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+{% endif %}
+
+{% endblock %}

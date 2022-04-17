@@ -1,0 +1,41 @@
+{% extends 'zloggr/base.html' %}
+{% load static %}
+
+{% block title %}Thanks for subscribing! | Zloggr blogs{% endblock %}
+
+{% block content %}
+
+
+  <!-- Page Header -->
+  <header class="masthead" style="background-image: url('static/pictures/zloggrwelcome.jpg')">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="page-heading">
+            <h1>Yeee ha!</h1>
+            <span class="subheading"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+  
+        <h2>
+          Thanks! &#128519&#128526&#129303
+        </h2>
+          <p>We are so glad to have you onboard!!, please do make sure to sign on our contact form and ask us any questions or continue reading blogs.</p>
+
+          <a href="{% url 'homepage' %}" class="btn btn-dark" role="button">Blog</a>
+          <a href="{% url 'contact' %}" class="btn btn-dark" role="button">Contact Form</a>
+
+          
+      </div>
+    </div>
+  </div>
+  
+{% endblock %}
